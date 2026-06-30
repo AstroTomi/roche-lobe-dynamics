@@ -63,9 +63,10 @@ Ensure you have Python installed along with the following standard scientific li
 A virtual environment `.venv` is recommended.
 
 ### Configuration
-1.  Open `variables.py` to set your desired initial masses (`MASS_1`, `MASS_2`), initial semimajor axis (`A`), and the constant mass transfer rate (`MASS_TRANSF_1`). 
+1. Create the `logs/` and `out/` directories in the project root if they do not already exist.
+2. Open `variables.py` to set your desired initial masses (`MASS_1`, `MASS_2`), initial semimajor axis (`A`), and the constant mass transfer rate (`MASS_TRANSF_1`). 
     * *Note: If Source 1 is the donor (losing mass), `MASS_TRANSF_1` must be a negative value.*
-2.  Open `flags.py` to toggle `PRINT_LOG`, `SAVE_LOG`, or `SAVE_FRAMES` depending on whether you want to observe the live simulation or render it to disk.
+3. Open `flags.py` to toggle `PRINT_LOG`, `SAVE_LOG`, or `SAVE_FRAMES` depending on whether you want to observe the live simulation or render it to disk.
 
 ### Execution
 Run the main script from your terminal on the `roche-lobes-dynamics/` folder:
